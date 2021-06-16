@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio Técnico - João Guilherme</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
 </head>
 
 <body>
@@ -32,7 +33,7 @@
             <span><small id="small-senha"></small></span>
             <label for="pass" class="label_form"> <img src="img/padlock.png" class="icon"> <input class="imp" type="password" id="pass" placeholder="Digite sua senha" onblur="campoSenha()"></label>
 
-            <button onclick="clicado()">Cirar conta</button>
+            <button onclick="clicado()" class="btn btn-seconday">Criar conta</button>
             <footer>
                 <img class="app" src="img/GooglePlay.png" alt="">
                 <img class="app" src="img/AppStore.png" alt="">
@@ -48,7 +49,9 @@
         </section>
     </section>
 
-    <script src="js/script.js">
-    </script>
+    <script src="js/script.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/popper.js/dist/popper.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </body>
 </html>

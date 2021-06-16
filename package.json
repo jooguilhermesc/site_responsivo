@@ -1,0 +1,24 @@
+{
+  "name": "desafio-tecnico-jooguilhermesc",
+  "version": "1.0.0",
+  "description": "Desenvolvimento de um site com grid de duas colunas, contendo formulário de cadastro e carrossel",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jooguilhermesc/projeto_bootstrap.git"
+  },
+  "author": "jooguilhermesc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jooguilhermesc/projeto_bootstrap/issues"
+  },
+  "homepage": "https://github.com/jooguilhermesc/projeto_bootstrap#readme",
+  "dependencies": {
+    "bootstrap": "^5.0.1",
+    "jquery": "^3.6.0",
+    "popper.js": "^1.16.1"
+  }
+}
