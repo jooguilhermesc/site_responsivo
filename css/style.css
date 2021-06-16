@@ -1,0 +1,48 @@
+.cor-de-fundo{
+	background: #F4EEE8;
+	height: 100vh;
+}
+
+.forcei{
+	height: 100%;
+	background: blue;
+}
+
+.boas-vindas{
+	text-align: center;
+	padding-top: 1em;
+	padding-bottom: 3em;
+	color: #325288;
+}
+
+.principal{
+	padding: 2em;
+}
+
+.formulario{
+	padding-top: 0.5em;
+	padding: 0.25em;
+}
+
+.botao{
+	background: #325288;
+	color: #F4EEE8;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.img-rodape{
+	margin-top: 2em;
+	width: 16vh;
+	height: 4vh;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.img-campo{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;	
+}
