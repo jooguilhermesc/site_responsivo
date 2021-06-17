@@ -1,9 +1,11 @@
 let time = 4500,
   imageIndex = 0,
+  spanIndex = 0,
   verificado = false,
   images = document.querySelectorAll("#carrossel img"),
   spans = document.querySelectorAll("#form span small");
 max = images.length;
+maxSpans = spans.length;
 
 function proximaImagem() {
   images[imageIndex].classList.remove("selecionada");
@@ -34,11 +36,12 @@ function campoUser() {
   //Insira um usuário válido, que deve conter pelo menos 8 caracteres
 
   if (user.value.length <= 8) {
-    console.log("Campo usuário inválido!");
+    spanUser.classList.add("selecionado");
     spanUser.innerHTML =
       "Insira um usuário válido, que deve conter pelo menos 8 caracteres";
   } else {
     spanUser.innerHTML = "";
+    spanUser.classList.add("deselecionado");
     verificado = true;
   }
 }
@@ -52,10 +55,11 @@ function campoEmail() {
   //Digite um e-mail válido no formato "user@email.com"
 
   if ((email.value.length <= 10) & (comparacao == false)) {
-    console.log("Campo e-mail inválido!");
+    spanEmail.classList.add("selecionado");
     spanEmail.innerHTML = "Digite um e-mail válido no formato 'user@email.com'";
   } else {
     spanEmail.innerHTML = "";
+    spanEmail.classList.add("deselecionado");
     verificado = true;
   }
 }
@@ -67,11 +71,12 @@ function campoSenha() {
   //Insira uma senha válida, que deve conter pelo menos 8 caracteres
 
   if (pass.value.length < 8) {
-    console.log("Comprimento de senha inválido!");
+    spanSenha.classList.add("selecionado");
     spanSenha.innerHTML =
       "Insira uma senha válida, que deve conter pelo menos 8 caracteres";
   } else {
     spanSenha.innerHTML = "";
+    spanSenha.classList.add("deselecionado");
     verificado = true;
   }
 }
